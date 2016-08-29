@@ -1,9 +1,14 @@
 var http = require("http");
 
-api_key = "wVMMkF2kiEKK7FF9TMONYA";  // sams key
+var fs, key_File;   //pull in key
+key_File = 'sams_key';
+fs = require('fs');
+var key = JSON.parse(
+    fs.readFileSync(key_File)
+);
 
 
-//url2 = "http://realtime.mbta.com/developer/api/v2/stopsbylocation?api_key=" + api_key + "&lat=42.346961&lon=-71.076640&format=json";
+//url2 = "http://realtime.mbta.com/developer/api/v2/stopsbylocation?api_key=" + key.sams_mbta_key + "&lat=42.346961&lon=-71.076640&format=json";
 /*
 
 
@@ -14,7 +19,7 @@ http://realtime.mbta.com/developer/api/v2/schedulebyroutes?api_key=wVMMkF2kiEKK7
 line_name = "77";
 stop = "2269";
 
-url2 = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + api_key + "&stop=" + stop + "&format=json";
+url2 = "http://realtime.mbta.com/developer/api/v2/predictionsbystop?api_key=" + key.sams_mbta_key + "&stop=" + stop + "&format=json";
 
 console.log(url2);
 console.log("=================\n");
