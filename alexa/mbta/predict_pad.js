@@ -28,7 +28,7 @@ var request = http.get(url2, function (response) {
     var buffer = "", 
         data,
         route;
-
+ 
     response.on("data", function (chunk) {
         buffer += chunk;
     }); 
