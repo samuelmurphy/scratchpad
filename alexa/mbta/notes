@@ -1,0 +1,27 @@
+
+
+
+https://www.npmjs.com/package/alexa-sdk
+
+
+
+
+Below is the current open development API key. It may change at any time. 
+This key is open for all developers to use in development and testing. 
+DO NOT go into production using this key! Register for an account and request a key of your own on realtime.mbta.com. 
+There is no cost.
+
+As of 5/11/13 the open development API key is: 
+wX9NwuHnZU2ToO7GmGR9uw
+
+
+
+http://www.nextbus.com/xmlFeedDocs/NextBusXMLFeed.pdf
+
+http://webservices.nextbus.com/service/publicXMLFeed?command=predictions&a=mbta&r=77&s=2265&useShortTitles=true
+
+http://webservices.nextbus.com/service/publicXMLFeed?command=routeConfig&a=mbta&r=77
+
+
+
+
